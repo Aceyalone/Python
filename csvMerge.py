@@ -24,3 +24,7 @@ with open('merged.csv','a') as fout:
                 fin.next() #skip header
             for line in csv.reader(fin,delimiter=','):
                 wout.writerow(line)
+print "test"
+print "test"
+
+print "why wont this update"
