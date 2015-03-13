@@ -11,7 +11,7 @@ if (pathToCSV+"merged.csv") in interesting_files:
     sys.exit()
 
 # Open result file
-with open('merged.csv','a') as fout:
+with open(pathToCSV+"merged.csv",'a') as fout:
     wout = csv.writer(fout,delimiter=',') 
     h = True
     for filename in interesting_files: 
@@ -24,4 +24,3 @@ with open('merged.csv','a') as fout:
                 fin.next() #skip header
             for line in csv.reader(fin,delimiter=','):
                 wout.writerow(line)
-                
